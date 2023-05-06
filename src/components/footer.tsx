@@ -1,12 +1,14 @@
 "use client"
 
+import Image from "next/image"
+
 const Footer = () => {
   return (
     <section className="py-10 bg-gray-50 sm:pt-16 lg:pt-24">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
           <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
-            <img className="w-auto h-16 mb-4" src="./images/logo-complete.png" alt="logo tukangkita" />
+            <Image className="w-auto h-16 mb-4" src="./images/logo-complete.png" alt="logo tukangkita" />
 
             <iframe title="tukangkita maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d587.4715631348213!2d110.38568032525342!3d-7.892782324164207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a55d89f6b9141%3A0xee58975db118e45a!2sSenja%20Sekar%20Orchid!5e0!3m2!1sid!2sid!4v1683211008564!5m2!1sid!2sid" width="300" height="300" style={{border:0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>

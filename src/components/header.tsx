@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
 
@@ -18,11 +19,11 @@ const Header = () => {
           <nav className="flex items-center justify-between h-16 lg:h-20">
             <div className="flex-shrink-0">
               <Link href="/" aria-label="Menu Home" className="flex">
-                <img className="w-auto h-12 lg:h-16" src="./images/logo-complete.png" alt="logo tukangkita" />
+                <Image className="w-auto h-12 lg:h-16" src="./images/logo-complete.png" alt="logo tukangkita" />
               </Link>
             </div>
 
-            <button type="button" name="menuToggle" className="inline-flex p-2 transition-all duration-200 rounded-md text-black lg:hidden focus:bg-gray-800 focus:text-white hover:bg-gray-800 hover:text-white" onClick={toggleMenu}>
+            <button type="button" aria-label="toggle menu" className="inline-flex p-2 transition-all duration-200 rounded-md text-black lg:hidden focus:bg-gray-800 focus:text-white hover:bg-gray-800 hover:text-white" onClick={toggleMenu}>
               <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
               </svg>
@@ -44,7 +45,7 @@ const Header = () => {
 
         {/* xs to lg */}
         <nav className={`fixed z-10 flex flex-col justify-between w-full min-h-screen px-4 py-10 bg-yellow-50 sm:px-6 lg:hidden ${menuShow ? 'translate-x-0' : 'translate-x-full'} transition-transform`}>
-          <button type="button" name="closeMenu" className="inline-flex justify-center p-2 transition-all duration-200 rounded-md text-black focus:bg-gray-800 focus:text-white hover:bg-gray-800 hover:text-white" onClick={toggleMenu}>
+          <button type="button" aria-label="close menu" className="inline-flex justify-center p-2 transition-all duration-200 rounded-md text-black focus:bg-gray-800 focus:text-white hover:bg-gray-800 hover:text-white" onClick={toggleMenu}>
             <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
             </svg>

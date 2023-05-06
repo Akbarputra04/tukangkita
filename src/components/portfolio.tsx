@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const Portfolio = () => {
   return (
     <section id="portfolio" className="py-10 bg-white sm:py-16 lg:py-24">
@@ -8,16 +10,16 @@ const Portfolio = () => {
 
         <div className="grid grid-cols-1 gap-6 mt-8 sm:grid-cols-4 md:mt-16">
           <div>
-            <img className="h-52 w-full object-cover" src="./images/portfolio1.jpeg" alt="portfolio tukangkita 1" />
+            <Image className="h-52 w-full object-cover" src="./images/portfolio1.jpeg" alt="portfolio tukangkita 1" />
           </div>
           <div>
-            <img className="h-52 w-full object-cover" src="./images/portfolio2.jpeg" alt="portfolio tukangkita 2" />
+            <Image className="h-52 w-full object-cover" src="./images/portfolio2.jpeg" alt="portfolio tukangkita 2" />
           </div>
           <div>
-            <img className="h-52 w-full object-cover" src="./images/portfolio3.jpeg" alt="portfolio tukangkita 3" />
+            <Image className="h-52 w-full object-cover" src="./images/portfolio3.jpeg" alt="portfolio tukangkita 3" />
           </div>
           <div>
-            <img className="h-52 w-full object-cover" src="./images/portfolio4.jpg" alt="portfolio tukangkita 4" />
+            <Image className="h-52 w-full object-cover" src="./images/portfolio4.jpg" alt="portfolio tukangkita 4" />
           </div>
         </div>
       </div>

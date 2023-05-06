@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import Image from "next/image"
 
 export const metadata: Metadata = {
   title: 'Tentang',
@@ -44,7 +45,7 @@ const Tentang = () => {
           </div>
 
           <div className="relative">
-            <img className="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110" src="./images/logo.png" alt="logo tukangkita" />
+            <Image className="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110" src="./images/logo.png" alt="logo tukangkita" />
           </div>
         </div>
       </div>
