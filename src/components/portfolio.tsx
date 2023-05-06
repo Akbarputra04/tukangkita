@@ -9,17 +9,10 @@ import image4 from '../../public/images/portfolio4.jpg'
 
 import LightGallery from 'lightgallery/react';
 
-// import styles
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-zoom.css';
 import 'lightgallery/css/lg-thumbnail.css';
 
-// If you want you can use SCSS instead of css
-// import 'lightgallery/scss/lightgallery.scss';
-// import 'lightgallery/scss/lg-zoom.scss';
-// import 'lightgallery/scss/lg-thumbnail.scss';
-
-// import plugins if you need
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 
@@ -36,16 +29,16 @@ const Portfolio = () => {
           plugins={[lgThumbnail, lgZoom]}
           elementClassNames="grid grid-cols-1 gap-6 mt-8 sm:grid-cols-4 md:mt-16"
         >
-          <a href="images/portfolio1.jpeg">
+          <a href="/images/portfolio1.jpeg">
             <Image className="h-52 w-full object-cover" src={image1} alt="portfolio tukangkita 1" />
           </a>
-          <a href="images/portfolio2.jpeg">
+          <a href="/images/portfolio2.jpeg">
             <Image className="h-52 w-full object-cover" src={image2} alt="portfolio tukangkita 2" />
           </a>
-          <a href="images/portfolio3.jpeg">
+          <a href="/images/portfolio3.jpeg">
             <Image className="h-52 w-full object-cover" src={image3} alt="portfolio tukangkita 3" />
           </a>
-          <a href="images/portfolio4.jpg">
+          <a href="/images/portfolio4.jpg">
             <Image className="h-52 w-full object-cover" src={image4} alt="portfolio tukangkita 4" />
           </a>
         </LightGallery>
