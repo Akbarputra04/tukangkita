@@ -1,4 +1,6 @@
 import Image from "next/image"
+import image1 from '../../public/images/about2.jpg'
+import image2 from '../../public/images/about1.jpg'
 
 const About = () => {
   return (
@@ -7,9 +9,9 @@ const About = () => {
         <div className="grid items-center md:grid-cols-2 gap-y-10 md:gap-x-20">
           <div className="pr-12 sm:pr-0">
           <div className="relative max-w-xs mb-12">
-              <Image className="object-bottom rounded-md" src="./images/about2.jpg" alt="pekerja tukangkita 1" />
+              <Image className="object-bottom rounded-md" src={image1} alt="pekerja tukangkita 1" />
 
-              <Image className="absolute origin-bottom-right scale-75 rounded-md -bottom-12 -right-12" src="./images/about1.jpg" alt="pekerja tukangkita 2" />
+              <Image className="absolute origin-bottom-right scale-75 rounded-md -bottom-12 -right-12" src={image2} alt="pekerja tukangkita 2" />
           </div>
           </div>
 

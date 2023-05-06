@@ -1,4 +1,27 @@
+"use client"
+
 import Image from "next/image"
+
+import image1 from '../../public/images/portfolio1.jpeg'
+import image2 from '../../public/images/portfolio2.jpeg'
+import image3 from '../../public/images/portfolio3.jpeg'
+import image4 from '../../public/images/portfolio4.jpg'
+
+import LightGallery from 'lightgallery/react';
+
+// import styles
+import 'lightgallery/css/lightgallery.css';
+import 'lightgallery/css/lg-zoom.css';
+import 'lightgallery/css/lg-thumbnail.css';
+
+// If you want you can use SCSS instead of css
+// import 'lightgallery/scss/lightgallery.scss';
+// import 'lightgallery/scss/lg-zoom.scss';
+// import 'lightgallery/scss/lg-thumbnail.scss';
+
+// import plugins if you need
+import lgThumbnail from 'lightgallery/plugins/thumbnail';
+import lgZoom from 'lightgallery/plugins/zoom';
 
 const Portfolio = () => {
   return (
@@ -8,20 +31,24 @@ const Portfolio = () => {
           <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight">Portfolio Kami</h2>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 mt-8 sm:grid-cols-4 md:mt-16">
-          <div>
-            <Image className="h-52 w-full object-cover" src="./images/portfolio1.jpeg" alt="portfolio tukangkita 1" />
-          </div>
-          <div>
-            <Image className="h-52 w-full object-cover" src="./images/portfolio2.jpeg" alt="portfolio tukangkita 2" />
-          </div>
-          <div>
-            <Image className="h-52 w-full object-cover" src="./images/portfolio3.jpeg" alt="portfolio tukangkita 3" />
-          </div>
-          <div>
-            <Image className="h-52 w-full object-cover" src="./images/portfolio4.jpg" alt="portfolio tukangkita 4" />
-          </div>
-        </div>
+        <LightGallery
+          speed={500}
+          plugins={[lgThumbnail, lgZoom]}
+          elementClassNames="grid grid-cols-1 gap-6 mt-8 sm:grid-cols-4 md:mt-16"
+        >
+          <a href="images/portfolio1.jpeg">
+            <Image className="h-52 w-full object-cover" src={image1} alt="portfolio tukangkita 1" />
+          </a>
+          <a href="images/portfolio2.jpeg">
+            <Image className="h-52 w-full object-cover" src={image2} alt="portfolio tukangkita 2" />
+          </a>
+          <a href="images/portfolio3.jpeg">
+            <Image className="h-52 w-full object-cover" src={image3} alt="portfolio tukangkita 3" />
+          </a>
+          <a href="images/portfolio4.jpg">
+            <Image className="h-52 w-full object-cover" src={image4} alt="portfolio tukangkita 4" />
+          </a>
+        </LightGallery>
       </div>
     </section>
   )

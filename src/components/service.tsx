@@ -1,10 +1,11 @@
 import Image from "next/image"
+import linesImage from '../../public/images/lines.svg'
 
 const Service = () => {
   return (
     <section id="jasa" className="relative py-10 bg-blue-600 sm:py-16 lg:py-24">
       <div className="absolute top-0 left-0">
-        <Image className="object-cover w-full h-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/pricing/8/lines.svg" alt="" />
+        <Image className="object-cover w-full h-full" src={linesImage} alt="" />
       </div>
 
       <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">

@@ -3,6 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
+import logo from '../../public/images/logo-complete.png'
 
 const Header = () => {
   const [menuShow, setMenuShow] = useState(false)
@@ -19,7 +20,7 @@ const Header = () => {
           <nav className="flex items-center justify-between h-16 lg:h-20">
             <div className="flex-shrink-0">
               <Link href="/" aria-label="Menu Home" className="flex">
-                <Image className="w-auto h-12 lg:h-16" src="./images/logo-complete.png" alt="logo tukangkita" />
+                <Image className="w-auto h-12 lg:h-16" src={logo} alt="logo tukangkita" />
               </Link>
             </div>
 
