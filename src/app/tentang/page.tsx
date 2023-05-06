@@ -1,3 +1,24 @@
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: 'Tentang',
+  openGraph: {
+    title: 'Tentang',
+    description: 'layanan jasa renovasi dan bangun rumah daerah dari mendesain, merencanakan, merenovasi dan membangun dengan teliti, hati-hati, sepenuh hati, dan bermutu tinggi.',
+    url: 'https://tukangkita.com',
+    siteName: 'Tukangkita',
+    images: [
+      {
+        url: 'https://tukangkita.com/images/logo.png',
+        width: 388,
+        height: 387,
+      },
+    ],
+    locale: 'id',
+    type: 'website',
+  },
+}
+
 const Tentang = () => {
   return (
     <section className="pt-10 overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-16">
