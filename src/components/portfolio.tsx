@@ -8,16 +8,16 @@ const Portfolio = () => {
 
         <div className="grid grid-cols-1 gap-6 mt-8 sm:grid-cols-4 md:mt-16">
           <div>
-            <img className="h-52 w-full object-cover" src="./images/portfolio1.jpeg" alt="" />
+            <img className="h-52 w-full object-cover" src="./images/portfolio1.jpeg" alt="portfolio tukangkita 1" />
           </div>
           <div>
-            <img className="h-52 w-full object-cover" src="./images/portfolio2.jpeg" alt="" />
+            <img className="h-52 w-full object-cover" src="./images/portfolio2.jpeg" alt="portfolio tukangkita 2" />
           </div>
           <div>
-            <img className="h-52 w-full object-cover" src="./images/portfolio3.jpeg" alt="" />
+            <img className="h-52 w-full object-cover" src="./images/portfolio3.jpeg" alt="portfolio tukangkita 3" />
           </div>
           <div>
-            <img className="h-52 w-full object-cover" src="./images/portfolio4.jpg" alt="" />
+            <img className="h-52 w-full object-cover" src="./images/portfolio4.jpg" alt="portfolio tukangkita 4" />
           </div>
         </div>
       </div>
