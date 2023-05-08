@@ -20,7 +20,7 @@ const Header = () => {
           <nav className="flex items-center justify-between h-16 lg:h-20">
             <div className="flex-shrink-0">
               <Link href="/" aria-label="Menu Home" className="flex">
-                <Image className="w-auto h-12 lg:h-16" src={logo} alt="logo tukangkita" />
+                <Image className="w-auto h-8 lg:h-10" src={logo} alt="logo tukangkita" />
               </Link>
             </div>
 
@@ -31,13 +31,13 @@ const Header = () => {
             </button>
 
             <div className="hidden lg:flex lg:items-center lg:space-x-10">
-              <a href="#home" aria-label="Menu Home" className="text-base text-black font-medium focus:text-opacity-70"> Home </a>
+              <a href="#home" onClick={toggleMenu} aria-label="Menu Home" className="text-base text-black font-medium focus:text-opacity-70"> Home </a>
 
-              <a href="#jasa" aria-label="Menu Jasa Kami" className="text-base text-black font-medium focus:text-opacity-70"> Jasa Kami </a>
+              <a href="#jasa" onClick={toggleMenu} aria-label="Menu Jasa Kami" className="text-base text-black font-medium focus:text-opacity-70"> Jasa Kami </a>
 
-              <a href="#portfolio" aria-label="Menu Portfolio" className="text-base text-black font-medium focus:text-opacity-70"> Portfolio </a>
+              <a href="#portfolio" onClick={toggleMenu} aria-label="Menu Portfolio" className="text-base text-black font-medium focus:text-opacity-70"> Portfolio </a>
 
-              <Link href="/tentang" aria-label="Menu Tentang" className="text-base text-black font-medium focus:text-opacity-70"> Tentang </Link>
+              <Link href="/tentang" onClick={toggleMenu} aria-label="Menu Tentang" className="text-base text-black font-medium focus:text-opacity-70"> Tentang </Link>
             </div>
 
             <a href="https://wa.me/+62895422399000" aria-label="Hubungi Kami" className="items-center justify-center hidden px-6 py-3 text-base font-semibold text-white transition-all duration-200 bg-orange-500 border border-transparent rounded-full lg:inline-flex hover:bg-orange-600 focus:bg-orange-600" role="button">Hubungi Kami</a>
@@ -54,13 +54,13 @@ const Header = () => {
 
           <div className="flex flex-col gap-10 flex-grow h-full">
             <nav className="flex flex-col mt-10 space-y-2">
-              <a href="#home" aria-label="Menu Home" className="flex w-full py-2 font-medium text-black justify-center transition-all duration-200 focus:text-opacity-70"> Home </a>
+              <a href="#home" onClick={toggleMenu} aria-label="Menu Home" className="flex w-full py-2 font-medium text-black justify-center transition-all duration-200 focus:text-opacity-70"> Home </a>
 
-              <a href="#jasa" aria-label="Menu Jasa Kami" className="flex w-full py-2 font-medium text-black justify-center transition-all duration-200 focus:text-opacity-70"> Jasa Kami </a>
+              <a href="#jasa" onClick={toggleMenu} aria-label="Menu Jasa Kami" className="flex w-full py-2 font-medium text-black justify-center transition-all duration-200 focus:text-opacity-70"> Jasa Kami </a>
 
-              <a href="#portfolio" aria-label="Menu Portfolio" className="flex w-full py-2 font-medium text-black justify-center transition-all duration-200 focus:text-opacity-70"> Portfolio </a>
+              <a href="#portfolio" onClick={toggleMenu} aria-label="Menu Portfolio" className="flex w-full py-2 font-medium text-black justify-center transition-all duration-200 focus:text-opacity-70"> Portfolio </a>
 
-              <Link href="/tentang" aria-label="Menu Tentang" className="flex w-full py-2 font-medium text-black justify-center transition-all duration-200 focus:text-opacity-70"> Tentang </Link>
+              <Link href="/tentang" onClick={toggleMenu} aria-label="Menu Tentang" className="flex w-full py-2 font-medium text-black justify-center transition-all duration-200 focus:text-opacity-70"> Tentang </Link>
             </nav>
 
             <div className="flex flex-col items-center">

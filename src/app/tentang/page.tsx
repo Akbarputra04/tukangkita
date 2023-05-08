@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 import Image from "next/image"
-import logo from "../../../public/images/logo.png"
+import logo from "../../../public/images/logo-portrait.png"
 
 export const metadata: Metadata = {
   title: 'Tentang',
